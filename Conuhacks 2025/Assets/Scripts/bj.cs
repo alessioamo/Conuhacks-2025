@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
+using TMPro;
 
 
 
@@ -21,8 +22,8 @@ public class BlackjackGame : MonoBehaviour
     private bool gameInProgress = false;
 
      // Add UI text references
-    public Text balanceText;  // Reference to the Text object that shows the player's balance
-    public Text scoreText;    // Reference to the Text object that shows the player's score
+    public TextMeshProUGUI balanceText;  // Reference to the Text object that shows the player's balance
+    public TextMeshProUGUI scoreText;    // Reference to the Text object that shows the player's score
 
     void Start()
     {

@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss.unity
     guid: 90e2c97425824ce4d95635a56929cf8c
+  - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: fdddb889329ba794b9d9414de1afc83b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -50,6 +50,8 @@ public class BlackjackGame : MonoBehaviour
         Debug.Log($"Player Score: {playerScore}, Dealer Score: {dealerScore}");
     }
 
+    Sprite originalFaceDown;
+
     void DealCard(List<GameObject> hand, Transform spawnPoint, int index, bool faceDown = false)
     {
         if (deck.Count == 0) return;
@@ -62,7 +64,9 @@ public class BlackjackGame : MonoBehaviour
         
         if (faceDown)
         {
-            cardInstance.transform.Rotate(0, 180, 0); // Simulate face-down
+            // cardInstance.transform.Rotate(0, 180, 0); // Simulate face-down
+            originalFaceDown = cardInstance.gameObject.GetComponent<SpriteRenderer>().sprite;
+            cardInstance.gameObject.GetComponent<SpriteRenderer>().sprite = cardInstance.gameObject.GetComponent<Card>().imageBack;
         }
 
         hand.Add(cardInstance);
@@ -131,7 +135,8 @@ public class BlackjackGame : MonoBehaviour
     {
         if (dealerHand.Count > 1)
         {
-            dealerHand[1].transform.Rotate(0, -180, 0); // Flip face-down card
+            // dealerHand[1].transform.Rotate(0, -180, 0); // Flip face-down card
+            dealerHand[1].gameObject.GetComponent<SpriteRenderer>().sprite = originalFaceDown;
         }
     }
 

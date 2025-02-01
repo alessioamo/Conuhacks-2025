@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057a35f163066de49a2cf4f8d226f6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 11
   suit: 2
   imageBack: {fileID: 7171958052718421976, guid: 43c9205b4c9032c45b47fcc5a4a88d84, type: 3}
   isAce: 1

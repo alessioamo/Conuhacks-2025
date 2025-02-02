@@ -1,5 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
+using UnityEngine.UI;
+using TMPro;
+
+
 
 public class BlackjackGame : MonoBehaviour
 {
@@ -16,10 +21,15 @@ public class BlackjackGame : MonoBehaviour
     private int currentBet = 0;
     private bool gameInProgress = false;
 
+     // Add UI text references
+    public TextMeshProUGUI balanceText;  // Reference to the Text object that shows the player's balance
+    public TextMeshProUGUI scoreText;    // Reference to the Text object that shows the player's score
+
     void Start()
     {
         LoadDeck();
         ShuffleDeck();
+        UpdateUI();
     }
 
     void Update()
@@ -90,6 +100,8 @@ public class BlackjackGame : MonoBehaviour
 
         Debug.Log($"Player Score: {playerScore}, Dealer Score: {dealerScore}");
 
+        UpdateUI();
+
         if (playerScore == 21)
         {
             EndRound(true);
@@ -151,6 +163,7 @@ public class BlackjackGame : MonoBehaviour
             DealCard(playerHand, playerSpawnPoint, playerHand.Count);
             playerScore = CalculateHandValue(playerHand);
             Debug.Log($"Player Score: {playerScore}");
+            UpdateUI();
 
             if (playerScore > 21)
             {
@@ -176,16 +189,23 @@ public class BlackjackGame : MonoBehaviour
     }
 
     void DealerTurn()
-    {
-        while (dealerScore < 17)
-        {
-            DealCard(dealerHand, dealerSpawnPoint, dealerHand.Count);
-            dealerScore = CalculateHandValue(dealerHand);
-            Debug.Log($"Dealer Score: {dealerScore}");
-        }
+{
+    StartCoroutine(DealerPlayCoroutine());
+}
 
-        CheckGameResult();
+IEnumerator DealerPlayCoroutine()
+{
+    while (dealerScore < 17)
+    {
+        yield return new WaitForSeconds(1.5f); // Add delay for realism
+
+        DealCard(dealerHand, dealerSpawnPoint, dealerHand.Count);
+        dealerScore = CalculateHandValue(dealerHand);
+        Debug.Log($"Dealer Score: {dealerScore}");
     }
+
+    CheckGameResult();
+}
 
     void CheckGameResult()
     {
@@ -223,6 +243,7 @@ public class BlackjackGame : MonoBehaviour
 
         currentBet = 0;
         gameInProgress = false;
+        UpdateUI();
     }
     void ClearTable()
 {
@@ -235,5 +256,18 @@ public class BlackjackGame : MonoBehaviour
         Destroy(card);
     }
 }
+ void UpdateUI()
+    {
+        if (balanceText != null)
+        {
+            balanceText.text = $"Balance: ${GameController.Instance.playerBalance}";
+        }
+
+        if (scoreText != null)
+        {
+            scoreText.text = $"Player Score: {playerScore}";
+        }
+    }
 }
+
 

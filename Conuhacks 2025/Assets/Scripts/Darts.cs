@@ -2,6 +2,7 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Darts : MonoBehaviour
@@ -18,10 +19,14 @@ public class Darts : MonoBehaviour
     bool isMoving = true;
     bool isVerticalMovementStarted = false;
     bool isPaused = false;
+    bool isPlayerTurnComplete = false;
 
     public GameObject crosshair;
     void Update()
     {
+        if (isPlayerTurnComplete) {
+            EnemyTurn();
+        }
         if (Input.GetMouseButtonDown(0) && !isVerticalMovementStarted) {
             isMoving = false;
             StartCoroutine(HandlePauseAndStartVerticalMovement());
@@ -29,12 +34,67 @@ public class Darts : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0) && isVerticalMovementStarted) {
             isPaused = true;
-            LogCrosshairColor();
+            
+            Vector2 positionToCheck = crosshair.transform.position;
+
+            Collider2D[] hitColliders = Physics2D.OverlapPointAll(positionToCheck);
+
+            AddScore(hitColliders, positionToCheck);
+
+            Debug.Log("Crosshair paused at position: " + crosshair.transform.position);
+
+            isPlayerTurnComplete = true;
         }
 
         if (isMoving && !isVerticalMovementStarted) {
             float newPositionX = startPosition.position.x + Mathf.PingPong(Time.time * moveSpeed, moveDistance);
             crosshair.transform.position = new Vector3(newPositionX, crosshair.transform.position.y, transform.position.z);
+        }
+    }
+
+    private void AddScore(Collider2D[] colliders, Vector3 position) {
+        bool isDoubleOutter = false;
+        bool isDoubleInner = false;
+        bool isTripleOutter = false;
+        bool isTripleInner = false;
+        int value = 0;
+
+        if (colliders.Length > 0) {
+            Debug.Log("Found " + colliders.Length + " colliders at position: " + position);
+
+            foreach (Collider2D collider in colliders) {
+                if (collider.name == "DoubleOuter") {
+                    isDoubleOutter = true;
+                }
+                if (collider.name == "DoubleInner") {
+                    isDoubleInner = true;
+                }
+                if (collider.name == "TripleOuter") {
+                    isTripleOutter = true;
+                }
+                if (collider.name == "TripleInner") {
+                    isTripleInner = true;
+                }
+                else {
+                    value = int.Parse(collider.name);
+                }
+                Debug.Log("Collider found: " + collider.name);
+            }
+
+            if (isDoubleOutter && !isDoubleInner) {
+                value *= 2;
+            }
+            else if (isTripleOutter && !isTripleInner) {
+                value *= 3;
+            }
+
+            playerScore += value;
+
+            UpdateUI();
+        } else {
+            Debug.Log("No colliders at position: " + position);
+
+            UpdateUI();
         }
     }
 
@@ -55,55 +115,78 @@ public class Darts : MonoBehaviour
         }
     }
 
-    void LogCrosshairColor() {
-    Vector3 screenPos = Camera.main.WorldToScreenPoint(crosshair.transform.position);
-    
-    // Normalize screen position to get UV coordinates
-    float normalizedX = screenPos.x / Screen.width;
-    float normalizedY = screenPos.y / Screen.height;
-
-    // Capture the screen as a texture (use a method to capture the screen texture)
-    Texture2D screenTexture = ScreenCapture.CaptureScreenshotAsTexture();
-    Color color = screenTexture.GetPixel((int)screenPos.x, (int)screenPos.y);
-
-    // Convert color to hex string
-    string hexColor = ColorUtility.ToHtmlStringRGB(color);
-    Debug.Log("Hex color at crosshair position: #" + hexColor);
-}
-
     public TextMeshProUGUI playerScoreText;
     public TextMeshProUGUI enemyScoreText;
     int playerScore = 0;
     int enemyScore = 0;
 
-    int turnCounter = 0;
+    void PlayerTurn() {
+        crosshair.transform.position = startPosition.position;
+        isMoving = true;
+        isVerticalMovementStarted = false;
+        isPaused = false;
+        isPlayerTurnComplete= false;
+    }
 
-    void StartTurn() {
-        if (turnCounter == 0) {
-            PlayerTurn();
+    bool isEnemyTurning = false;
+    [System.Serializable]
+    public struct TransformWithInt
+    {
+        public Transform transform;
+        public int value;
+    }
+    public TransformWithInt[] throwPositions = new TransformWithInt[20];
+    void EnemyTurn() {
+        if (!isEnemyTurning) {
+            isEnemyTurning = true;
+
+            int randomIndex = Random.Range(0, throwPositions.Length);
+            TransformWithInt randomEntry = throwPositions[randomIndex];
+
+            Transform randomTransform = randomEntry.transform;
+            int correspondingValue = randomEntry.value;
+
+            enemyScore += correspondingValue;
+
+            UpdateUI();
+
+            SpawnDart("red", randomTransform);
+        }
+    }
+
+    IEnumerator DartDespawn(GameObject dart) {
+        yield return new WaitForSeconds(2f);
+
+        Destroy(dart);
+
+        isEnemyTurning = false;
+        PlayerTurn();
+    }
+
+    public GameObject blueDart;
+    public GameObject redDart;
+    void SpawnDart(string color, Transform position) {
+        GameObject dart;
+
+        if (color == "blue") {
+            dart = Instantiate(blueDart, position.position, Quaternion.identity);
         }
         else {
-            EnemyTurn();
-        }
-    }
-
-    int numberOfPlayerDarts = 3;
-    int numberOfEnemyDarts = 3;
-    void PlayerTurn() {
-        for (int i = 0; i < numberOfPlayerDarts; i++) {
-
-            numberOfPlayerDarts--;
+            dart = Instantiate(redDart, position.position, Quaternion.identity);
         }
 
-        numberOfPlayerDarts = 3;
-
-        turnCounter = 1;
-        StartTurn();
+        StartCoroutine(DartDespawn(dart));
     }
 
-    void EnemyTurn() {
+    public void UpdateUI() {
+        if (playerScoreText != null)
+        {
+            playerScoreText.text = $"Player: ${playerScore}";
+        }
 
-
-        turnCounter = 0;
+        if (enemyScoreText != null)
+        {
+            enemyScoreText.text = $"Enemy: {enemyScore}";
+        }
     }
 }

@@ -46,4 +46,18 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void DecreaseBet(int value) {
+        betAmount -= value;
+    }
+
+    public void IncreaseBet(int value) {
+        betAmount += value;
+    }
+
+    public void ResetBet() {
+        betAmount = 0;
+    }
+
+    public int betAmount = 0;
 }

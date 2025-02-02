@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 
@@ -24,6 +25,8 @@ public class BlackjackGame : MonoBehaviour
      // Add UI text references
     public TextMeshProUGUI balanceText;  // Reference to the Text object that shows the player's balance
     public TextMeshProUGUI scoreText;    // Reference to the Text object that shows the player's score
+    public TextMeshProUGUI betText;
+    public TextMeshProUGUI dealerScoreText;
 
     void Start()
     {
@@ -36,7 +39,12 @@ public class BlackjackGame : MonoBehaviour
     {
         if (!gameInProgress && Input.GetKeyDown(KeyCode.B))
         {
-            PlaceBet(100);
+            if (GameController.Instance.betAmount <= 0) {
+                Debug.Log("Not enough bet");
+            }
+            else {
+                PlaceBet(GameController.Instance.betAmount);
+            }
         }
         else if (gameInProgress)
         {
@@ -48,6 +56,10 @@ public class BlackjackGame : MonoBehaviour
             {
                 PlayerTurn("stand");
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.P)) {
+            SceneManager.LoadScene(1);
         }
     }
 
@@ -185,6 +197,7 @@ public class BlackjackGame : MonoBehaviour
         {
             //dealerHand[1].transform.Rotate(0, -180, 0);
             dealerHand[1].gameObject.GetComponent<SpriteRenderer>().sprite = originalFaceDown;
+            UpdateUI();
         }
     }
 
@@ -256,7 +269,7 @@ IEnumerator DealerPlayCoroutine()
         Destroy(card);
     }
 }
- void UpdateUI()
+ public void UpdateUI()
     {
         if (balanceText != null)
         {
@@ -266,6 +279,17 @@ IEnumerator DealerPlayCoroutine()
         if (scoreText != null)
         {
             scoreText.text = $"Player Score: {playerScore}";
+        }
+        if (betText != null) {
+            betText.text = $"Bet Amount: {GameController.Instance.betAmount}";
+        }
+        if (dealerScoreText != null) {
+            if (playerTurn) {
+                dealerScoreText.text = $"Dealer Score: ?";
+            }
+            else {
+                dealerScoreText.text = $"Dealer Score: {dealerScore}";
+            }
         }
     }
 }

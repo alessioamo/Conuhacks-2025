@@ -358,11 +358,11 @@ Transform:
   m_GameObject: {fileID: 154031671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7441, y: -3.4168, z: -0.03392602}
+  m_LocalPosition: {x: 0.09704837, y: -1.473433, z: 0.05363757}
   m_LocalScale: {x: 2.5434098, y: 2.0319266, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1766292071}
+  m_Father: {fileID: 1796492640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &154031673
 CapsuleCollider2D:
@@ -880,6 +880,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5195369858411132326, guid: ce944345e6018b043b48b02a46848d48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 232127014}
+    - targetCorrespondingSourceObject: {fileID: 5195369858411132326, guid: ce944345e6018b043b48b02a46848d48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1563801645}
+    - targetCorrespondingSourceObject: {fileID: 5195369858411132326, guid: ce944345e6018b043b48b02a46848d48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 154031672}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce944345e6018b043b48b02a46848d48, type: 3}
 --- !u!1 &346712291
@@ -3623,12 +3629,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563801643}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06549446, y: -4.104713, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.15549447, y: -1.504713, z: 0.05363757}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1796492640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620676581
 GameObject:
@@ -4219,7 +4225,6 @@ Transform:
   - {fileID: 844319570}
   - {fileID: 937973320}
   - {fileID: 653546165}
-  - {fileID: 154031672}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1796492639 stripped
@@ -4711,5 +4716,4 @@ SceneRoots:
   - {fileID: 1353512816}
   - {fileID: 1699056055}
   - {fileID: 926331134}
-  - {fileID: 1563801645}
   - {fileID: 1308225480}

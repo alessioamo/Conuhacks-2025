@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
@@ -10,58 +12,64 @@ public class Darts : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    public float moveSpeed = 2f;
+    public float moveDistance = 8.25f;
+    public Transform startPosition;
+    bool isMoving = true;
+    bool isVerticalMovementStarted = false;
+    bool isPaused = false;
+
+    public GameObject crosshair;
     void Update()
     {
-        if (isAiming) {
-            if (isMovingHorizontally) {
-                MoveHorizontally();
-            }
-            
-            else {
-                MoveVertically();
-            }
+        if (Input.GetMouseButtonDown(0) && !isVerticalMovementStarted) {
+            isMoving = false;
+            StartCoroutine(HandlePauseAndStartVerticalMovement());
+        }
+        
+        if (Input.GetMouseButtonDown(0) && isVerticalMovementStarted) {
+            isPaused = true;
+            LogCrosshairColor();
         }
 
-        if (Input.GetMouseButtonDown(0) && !isPlayerReady) {
-            isMovingHorizontally = false;
-            isPlayerReady = true;
-        }
-
-        if (Input.GetMouseButtonUp(0) && isPlayerReady) {
-            LogFinalPosition();
-            isPlayerReady = false;
+        if (isMoving && !isVerticalMovementStarted) {
+            float newPositionX = startPosition.position.x + Mathf.PingPong(Time.time * moveSpeed, moveDistance);
+            crosshair.transform.position = new Vector3(newPositionX, crosshair.transform.position.y, transform.position.z);
         }
     }
 
-    bool isAiming = true;
-    public Transform crosshair;
-    public Transform horizontalStart;
-    public Transform horizontalEnd;
-    public Transform verticalStart;
-    public Transform verticalEnd;
-    public float horizontalSpeed = 5f;
-    public float verticalSpeed = 5f; 
+    private IEnumerator HandlePauseAndStartVerticalMovement() {
+        isPaused = true;
 
-    private bool isMovingHorizontally = true;
-    private bool isPlayerReady = false;
-    private Vector3 finalPosition;
+        yield return new WaitForSeconds(1f);
 
-    private void MoveHorizontally() {
-        float moveDirection = Mathf.PingPong(Time.time * horizontalSpeed, 1);
-        crosshair.position = Vector3.Lerp(horizontalStart.position, horizontalEnd.position, moveDirection);
+        isPaused = false;
+        isVerticalMovementStarted = true;
     }
 
-    private void MoveVertically() {
-        float moveDirection = Mathf.PingPong(Time.time * verticalSpeed, 1);
-        crosshair.position = Vector3.Lerp(verticalStart.position, verticalEnd.position, moveDirection);
+    void FixedUpdate()
+    {
+        if (isVerticalMovementStarted && !isPaused) {
+            float newPositionY = startPosition.position.y + Mathf.PingPong(Time.time * moveSpeed, 8f) - 8f;
+            crosshair.transform.position = new Vector3(crosshair.transform.position.x, newPositionY, crosshair.transform.position.z);
+        }
     }
 
-    private void LogFinalPosition() {
-        finalPosition = crosshair.position;
-        Debug.Log("Final Position: " + finalPosition);
-    }
+    void LogCrosshairColor() {
+    Vector3 screenPos = Camera.main.WorldToScreenPoint(crosshair.transform.position);
+    
+    // Normalize screen position to get UV coordinates
+    float normalizedX = screenPos.x / Screen.width;
+    float normalizedY = screenPos.y / Screen.height;
 
+    // Capture the screen as a texture (use a method to capture the screen texture)
+    Texture2D screenTexture = ScreenCapture.CaptureScreenshotAsTexture();
+    Color color = screenTexture.GetPixel((int)screenPos.x, (int)screenPos.y);
+
+    // Convert color to hex string
+    string hexColor = ColorUtility.ToHtmlStringRGB(color);
+    Debug.Log("Hex color at crosshair position: #" + hexColor);
+}
 
     public TextMeshProUGUI playerScoreText;
     public TextMeshProUGUI enemyScoreText;

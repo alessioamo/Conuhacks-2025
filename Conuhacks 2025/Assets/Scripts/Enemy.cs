@@ -50,6 +50,9 @@ public class Enemy : MonoBehaviour
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(1);
         SceneManager.LoadScene(1);
+        if (GameController.Instance.showHorses) {
+            GameController.Instance.ShowHorses();
+        }
         GameController.Instance.balanceText.enabled = true;
     }
 

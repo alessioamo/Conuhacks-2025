@@ -25,17 +25,27 @@ public class GameController : MonoBehaviour
 
     public GameObject horseExit;
     public GameObject horseHover;
+    public bool showHorses = false;
     public void AddMoney(int amount)
     {
         playerBalance += amount;
         Debug.Log($"Money Added: ${amount}, New Balance: ${playerBalance}");
 
         if (playerBalance >= 50) {
-            horseExit.SetActive(true);
-            horseHover.SetActive(true);
+            showHorses = true;
         }
 
         UpdateUI();
+    }
+
+    public void ShowHorses() {
+        horseExit.SetActive(true);
+        horseHover.SetActive(true);
+    }
+
+    public void HideHorses() {
+        horseExit.SetActive(false);
+        horseHover.SetActive(false);
     }
 
     public bool DeductMoney(int amount)

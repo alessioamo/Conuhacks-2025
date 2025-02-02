@@ -135,6 +135,9 @@ public class FaceSpawner : MonoBehaviour
     IEnumerator ReturnToSaloon() {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(1);
+        if (GameController.Instance.showHorses) {
+            GameController.Instance.ShowHorses();
+        }
         GameController.Instance.balanceText.enabled = true;
     }
 

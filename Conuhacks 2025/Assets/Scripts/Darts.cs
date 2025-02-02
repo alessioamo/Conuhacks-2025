@@ -65,6 +65,9 @@ public class Darts : MonoBehaviour
         else if (enemyWin) {
             SceneManager.LoadScene(1);
             GameController.Instance.balanceText.enabled = true;
+            if (GameController.Instance.showHorses) {
+                GameController.Instance.ShowHorses();
+            }
         }
     }
 

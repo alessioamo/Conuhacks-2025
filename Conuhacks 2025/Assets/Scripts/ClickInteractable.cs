@@ -50,6 +50,8 @@ public class ClickInteractable : MonoBehaviour
             AudioController.instance.ChangeMusic(0);
             GameController.Instance.balanceText.enabled = false;
             SceneManager.LoadScene(7);
+
+            GameController.Instance.HideHorses();
         }
     }
 

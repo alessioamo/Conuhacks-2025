@@ -28,6 +28,8 @@ public class BlackjackGame : MonoBehaviour
     public TextMeshProUGUI betText;
     public TextMeshProUGUI dealerScoreText;
 
+    public TextMeshProUGUI resultText;
+
     void Start()
     {
         LoadDeck();
@@ -58,7 +60,7 @@ public class BlackjackGame : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.P)) {
+        if (Input.GetKeyDown(KeyCode.P) && !gameInProgress) {
             SceneManager.LoadScene(1);
         }
     }
@@ -94,6 +96,8 @@ public class BlackjackGame : MonoBehaviour
 
     void StartGame()
     {
+        resultText.gameObject.SetActive(false);
+
         ClearTable();
         gameInProgress = true;
         playerHand.Clear();
@@ -128,7 +132,7 @@ public class BlackjackGame : MonoBehaviour
         GameObject card = deck[0];
         deck.RemoveAt(0);
 
-        Vector3 position = spawnPoint.position + new Vector3(index * 1.5f, 0, 0);
+        Vector3 position = spawnPoint.position + new Vector3(index * 2.05f, 0, 0);
         GameObject cardInstance = Instantiate(card, position, Quaternion.identity);
         
         if (faceDown)
@@ -180,6 +184,7 @@ public class BlackjackGame : MonoBehaviour
             if (playerScore > 21)
             {
                 Debug.Log("Player Bust! Dealer Wins.");
+                ShowResultText("dealer");
                 EndRound(false);
             }
         }
@@ -215,6 +220,7 @@ IEnumerator DealerPlayCoroutine()
         DealCard(dealerHand, dealerSpawnPoint, dealerHand.Count);
         dealerScore = CalculateHandValue(dealerHand);
         Debug.Log($"Dealer Score: {dealerScore}");
+        UpdateUI();
     }
 
     CheckGameResult();
@@ -235,23 +241,32 @@ IEnumerator DealerPlayCoroutine()
         else
         {
             Debug.Log("Push! It's a Tie.");
+            ShowResultText("tie");
             GameController.Instance.AddMoney(currentBet);
             currentBet = 0;
             gameInProgress = false;
         }
     }
 
+    int playerWinCounter = 0;
     void EndRound(bool playerWins)
     {
         if (playerWins)
         {
+            playerWinCounter++;
             int payout = (playerScore == 21 && playerHand.Count == 2) ? Mathf.RoundToInt(currentBet * 2.5f) : currentBet * 2;
             GameController.Instance.AddMoney(payout);
             Debug.Log($"Player Wins! New Balance: ${GameController.Instance.playerBalance}");
+            ShowResultText("player");
+            if (playerWinCounter >= 5) {
+                playerWinCounter = 0;
+                GameController.Instance.LoadBossFight(3);
+            }
         }
         else
         {
             Debug.Log($"Dealer Wins. Remaining Balance: ${GameController.Instance.playerBalance}");
+            ShowResultText("dealer");
         }
 
         currentBet = 0;
@@ -290,6 +305,19 @@ IEnumerator DealerPlayCoroutine()
             else {
                 dealerScoreText.text = $"Dealer Score: {dealerScore}";
             }
+        }
+    }
+
+    void ShowResultText(string name) {
+        resultText.gameObject.SetActive(true);
+        if (name == "player") {
+            resultText.text = "You Win!";
+        }
+        else if (name == "dealer") {
+            resultText.text = "You Lost!";
+        }
+        else if (name == "tie") {
+            resultText.text = "It's a Tie!";
         }
     }
 }

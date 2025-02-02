@@ -26,19 +26,29 @@ public class ClickInteractable : MonoBehaviour
 
     public void OnClick(string tag) {
         if (tag == "Darts") {
-            SceneManager.LoadScene(2);
+            GameController.Instance.DisplayGameInfo(0);
+            // SceneManager.LoadScene(2);
         }
         else if (tag == "Wanted") {
-            SceneManager.LoadScene(3);
+            GameController.Instance.DisplayGameInfo(1);
+            // SceneManager.LoadScene(3);
         }
         else if (tag == "Blackjack") {
-            SceneManager.LoadScene(4);
+            GameController.Instance.DisplayGameInfo(2);
+            // SceneManager.LoadScene(4);
         }
         else if (tag == "Boss") {
-            SceneManager.LoadScene(5);
+            GameController.Instance.DisplayGameInfo(3);
+            // SceneManager.LoadScene(5);
         }
         else if (tag == "Bar") {
-            SceneManager.LoadScene(6);
+            GameController.Instance.DisplayGameInfo(4);
+            // SceneManager.LoadScene(6);
+        }
+        else if (tag == "Horse") {
+            AudioController.instance.StopMusic();
+            AudioController.instance.ChangeMusic(0);
+            SceneManager.LoadScene(7);
         }
     }
 

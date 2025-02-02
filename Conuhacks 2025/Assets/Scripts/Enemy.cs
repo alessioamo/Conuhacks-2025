@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void EnemyDeath() {
+        Destroy(this.gameObject);
         GameController.Instance.AddMoney(5);
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(1);

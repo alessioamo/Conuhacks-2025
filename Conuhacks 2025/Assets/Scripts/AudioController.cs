@@ -73,4 +73,8 @@ public class AudioController : MonoBehaviour
         currentTrackIndex = (currentTrackIndex - 1 + musicClips.Length) % musicClips.Length;
         ChangeMusic(currentTrackIndex);
     }
+
+    public void QuitGame() {
+        Application.Quit();
+    }
 }

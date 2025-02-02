@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -688, y: -216.45999}
+  m_AnchoredPosition: {x: -688, y: -162}
   m_SizeDelta: {x: 142.64, y: 39.4911}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239197951
@@ -337,7 +337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 239197952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1564892004}
+        m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &239197952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1104168145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1018,7 +1030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -688, y: 166}
+  m_AnchoredPosition: {x: -688, y: 53}
   m_SizeDelta: {x: 142.6412, y: 43.2308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417844654
@@ -1184,6 +1196,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ceee010ddb995b47b59e37f6d4ccc09, type: 3}
+--- !u!114 &1564892004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8373811856854653287, guid: 1ceee010ddb995b47b59e37f6d4ccc09, type: 3}
+  m_PrefabInstance: {fileID: 1564892003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b26a3624603900438de26ff3008d635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1577959643
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,16 +6,35 @@ public class Player : MonoBehaviour
 {
     void Start()
     {
-        playerHealth = maxHealth;
+        // if (playerHealth == 0) {
+        //     playerHealth = 3;
+        // }
+        // else {
+        //     playerHealth = GameController.Instance.currentPlayerHealth;
+        // }
+
+        playerHealth = 3;
 
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(2);
     }
 
+    bool isPlayerLoaded = false;
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (!isPlayerLoaded) {
+            isPlayerLoaded = true;
+
+            GameController.Instance.heart1.SetActive(true);
+            if (playerHealth >= 2) {
+                GameController.Instance.heart2.SetActive(true);
+            }
+            if (playerHealth >= 3) {
+                GameController.Instance.heart3.SetActive(true);
+            }
+        }
     }
 
     bool canShoot = true;
@@ -58,6 +77,17 @@ public class Player : MonoBehaviour
     public int playerHealth;
     public void TakeDamage() {
         playerHealth--;
+        switch (playerHealth) {
+            case 0:
+                GameController.Instance.heart1.SetActive(false);
+                break;
+            case 1:
+                GameController.Instance.heart2.SetActive(false);
+                break;
+            case 2:
+                GameController.Instance.heart3.SetActive(false);
+                break;
+        }
         if (playerHealth <= 0) {
             PlayerDeath();
         }
@@ -65,6 +95,11 @@ public class Player : MonoBehaviour
 
     void PlayerDeath() {
         GameController.Instance.DeductMoney(GameController.Instance.playerBalance/2);
+
+        GameController.Instance.heart1.SetActive(true);
+        GameController.Instance.heart2.SetActive(true);
+        GameController.Instance.heart3.SetActive(true);
+
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(1);
         SceneManager.LoadScene(1);
@@ -72,6 +107,14 @@ public class Player : MonoBehaviour
 
     public void Heal() {
         playerHealth++;
+        switch (playerHealth) {
+            case 2:
+                GameController.Instance.heart2.SetActive(true);
+                break;
+            case 3:
+                GameController.Instance.heart3.SetActive(true);
+                break;
+        }
         if (playerHealth >= maxHealth) {
             playerHealth = maxHealth;
         }

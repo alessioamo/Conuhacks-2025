@@ -10,7 +10,7 @@ public class Darts : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        UpdateUI();
     }
 
     public float moveSpeed = 2f;
@@ -58,7 +58,8 @@ public class Darts : MonoBehaviour
             if (enemyDelayCoroutine != null) {
                 StopCoroutine(enemyDelayCoroutine);
             }
-            // TODO - boss fight
+            
+            GameController.Instance.LoadBossFight(2);
         }
         else if (enemyWin) {
             

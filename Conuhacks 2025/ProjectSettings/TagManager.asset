@@ -12,6 +12,7 @@ TagManager:
   - Darts
   - Boss
   - Bar
+  - Horse
   layers:
   - Default
   - TransparentFX

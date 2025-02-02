@@ -144,7 +144,9 @@ public class FaceSpawner : MonoBehaviour
         isGameOver = true;
         uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.green;
-        StartCoroutine(ReturnToSaloon());
+        // StartCoroutine(ReturnToSaloon());
+
+        GameController.Instance.LoadBossFight(1);
     }
 
     void LoseGame() {

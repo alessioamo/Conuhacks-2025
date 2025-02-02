@@ -1,0 +1,2158 @@
+fileFormatVersion: 2
+guid: 057a1e30061ad984f9f593782c5d6477
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3740901641542151434
+    second: 79 1bit-portraits_0
+  - first:
+      213: -3230270702205145213
+    second: 79 1bit-portraits_1
+  - first:
+      213: -1699539980480075977
+    second: 79 1bit-portraits_2
+  - first:
+      213: 2380422734416631200
+    second: 79 1bit-portraits_3
+  - first:
+      213: -7365241375595342145
+    second: 79 1bit-portraits_4
+  - first:
+      213: 5118859659668666185
+    second: 79 1bit-portraits_5
+  - first:
+      213: 5324158668807704411
+    second: 79 1bit-portraits_6
+  - first:
+      213: -8120812349724822912
+    second: 79 1bit-portraits_7
+  - first:
+      213: -5353556959245828176
+    second: 79 1bit-portraits_8
+  - first:
+      213: 5218813936426227755
+    second: 79 1bit-portraits_9
+  - first:
+      213: -4881208575662569042
+    second: 79 1bit-portraits_10
+  - first:
+      213: -6041350938074835856
+    second: 79 1bit-portraits_11
+  - first:
+      213: 8059232742281224829
+    second: 79 1bit-portraits_12
+  - first:
+      213: -6060526610341171621
+    second: 79 1bit-portraits_13
+  - first:
+      213: -2357352461060983731
+    second: 79 1bit-portraits_14
+  - first:
+      213: -8363462834244546525
+    second: 79 1bit-portraits_15
+  - first:
+      213: 1845772198792655097
+    second: 79 1bit-portraits_16
+  - first:
+      213: -4699828631753954698
+    second: 79 1bit-portraits_17
+  - first:
+      213: -6114210866315050909
+    second: 79 1bit-portraits_18
+  - first:
+      213: 7057453787295804777
+    second: 79 1bit-portraits_19
+  - first:
+      213: 9000339209973300617
+    second: 79 1bit-portraits_20
+  - first:
+      213: 7259424168667775928
+    second: 79 1bit-portraits_21
+  - first:
+      213: -7501802938121212960
+    second: 79 1bit-portraits_22
+  - first:
+      213: -1599240088809119960
+    second: 79 1bit-portraits_23
+  - first:
+      213: 4881457033410726848
+    second: 79 1bit-portraits_24
+  - first:
+      213: 7075270622703858485
+    second: 79 1bit-portraits_25
+  - first:
+      213: 4463605640407096465
+    second: 79 1bit-portraits_26
+  - first:
+      213: 2668809582049789666
+    second: 79 1bit-portraits_27
+  - first:
+      213: 24253476208998149
+    second: 79 1bit-portraits_28
+  - first:
+      213: -7441520917677740125
+    second: 79 1bit-portraits_29
+  - first:
+      213: 1725282404449122555
+    second: 79 1bit-portraits_30
+  - first:
+      213: 2986451216113196446
+    second: 79 1bit-portraits_31
+  - first:
+      213: -2539376809831463626
+    second: 79 1bit-portraits_32
+  - first:
+      213: -7268323855181655617
+    second: 79 1bit-portraits_33
+  - first:
+      213: 4055431425987541273
+    second: 79 1bit-portraits_34
+  - first:
+      213: 9092384650930006787
+    second: 79 1bit-portraits_35
+  - first:
+      213: -8012658822417227654
+    second: 79 1bit-portraits_36
+  - first:
+      213: 8386772193686573805
+    second: 79 1bit-portraits_37
+  - first:
+      213: -4997542355147737478
+    second: 79 1bit-portraits_38
+  - first:
+      213: -8544495478902799422
+    second: 79 1bit-portraits_39
+  - first:
+      213: -8614756340426316773
+    second: 79 1bit-portraits_40
+  - first:
+      213: -5564075261584174488
+    second: 79 1bit-portraits_41
+  - first:
+      213: 4977655944887995337
+    second: 79 1bit-portraits_42
+  - first:
+      213: -3516981393192645524
+    second: 79 1bit-portraits_43
+  - first:
+      213: -6012521904646366970
+    second: 79 1bit-portraits_44
+  - first:
+      213: 4200961656523871049
+    second: 79 1bit-portraits_45
+  - first:
+      213: -8689218146666677099
+    second: 79 1bit-portraits_46
+  - first:
+      213: 1988098019187707417
+    second: 79 1bit-portraits_47
+  - first:
+      213: -1136687270473932771
+    second: 79 1bit-portraits_48
+  - first:
+      213: -2244695250747060956
+    second: 79 1bit-portraits_49
+  - first:
+      213: 7202639318176197042
+    second: 79 1bit-portraits_50
+  - first:
+      213: 662269354310183698
+    second: 79 1bit-portraits_51
+  - first:
+      213: -333786961424085375
+    second: 79 1bit-portraits_52
+  - first:
+      213: -5204433496110078184
+    second: 79 1bit-portraits_53
+  - first:
+      213: 2210663274247237205
+    second: 79 1bit-portraits_54
+  - first:
+      213: -8907590740018999386
+    second: 79 1bit-portraits_55
+  - first:
+      213: 6226992347233072022
+    second: 79 1bit-portraits_56
+  - first:
+      213: 5913739569692260584
+    second: 79 1bit-portraits_57
+  - first:
+      213: -4029731087791156753
+    second: 79 1bit-portraits_58
+  - first:
+      213: 467911871160152082
+    second: 79 1bit-portraits_59
+  - first:
+      213: 4079875626535392515
+    second: 79 1bit-portraits_60
+  - first:
+      213: -8906068952781070059
+    second: 79 1bit-portraits_61
+  - first:
+      213: -1982269319276339196
+    second: 79 1bit-portraits_62
+  - first:
+      213: 6247733430776070995
+    second: 79 1bit-portraits_63
+  - first:
+      213: 7154194358791081431
+    second: 79 1bit-portraits_64
+  - first:
+      213: 6702777591305873015
+    second: 79 1bit-portraits_65
+  - first:
+      213: 5494623612474954619
+    second: 79 1bit-portraits_66
+  - first:
+      213: -1008452319471226745
+    second: 79 1bit-portraits_67
+  - first:
+      213: -5351143138208402820
+    second: 79 1bit-portraits_68
+  - first:
+      213: 5663915148938845843
+    second: 79 1bit-portraits_69
+  - first:
+      213: -7296923394759474334
+    second: 79 1bit-portraits_70
+  - first:
+      213: -2241086245171260088
+    second: 79 1bit-portraits_71
+  - first:
+      213: -6850673222873034958
+    second: 79 1bit-portraits_72
+  - first:
+      213: -4593302928365275673
+    second: 79 1bit-portraits_73
+  - first:
+      213: -1386604742645657900
+    second: 79 1bit-portraits_74
+  - first:
+      213: 8167043320538127533
+    second: 79 1bit-portraits_75
+  - first:
+      213: -8788854897541495762
+    second: 79 1bit-portraits_76
+  - first:
+      213: 5095332196859765794
+    second: 79 1bit-portraits_77
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 79 1bit-portraits_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 65
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dabcb093a5ae330800000000000000
+      internalID: 3740901641542151434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 287
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fe5ba39e5cb23d0800000000000000
+      internalID: -3230270702205145213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 255
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73729ed64650a68e0800000000000000
+      internalID: -1699539980480075977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 287
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5da2c6dd5f80120800000000000000
+      internalID: 2380422734416631200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 255
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb651aaddf769c990800000000000000
+      internalID: -7365241375595342145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 287
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947b0a55db7d90740800000000000000
+      internalID: 5118859659668666185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_6
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 287
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f8916c91633e940800000000000000
+      internalID: 5324158668807704411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 255
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082fb0f91341d4f80800000000000000
+      internalID: -8120812349724822912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 255
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bff4575f4854b5b0800000000000000
+      internalID: -5353556959245828176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 287
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b281b8def93fc6840800000000000000
+      internalID: 5218813936426227755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 287
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9ca0589a6724cb0800000000000000
+      internalID: -4881208575662569042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_11
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 255
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074939c845fc82ca0800000000000000
+      internalID: -6041350938074835856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 255
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72aeddba7528df60800000000000000
+      internalID: 8059232742281224829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 223
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5eefce682fa4eba0800000000000000
+      internalID: -6060526610341171621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 255
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44311c2d60094fd0800000000000000
+      internalID: -2357352461060983731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 223
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3201ca02dd20feb80800000000000000
+      internalID: -8363462834244546525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 191
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0f35519008d9910800000000000000
+      internalID: 1845772198792655097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 223
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a681b92cad6ceb0800000000000000
+      internalID: -4699828631753954698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 255
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360457f8c95f52ba0800000000000000
+      internalID: -6114210866315050909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 223
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d608ad3dc11f160800000000000000
+      internalID: 7057453787295804777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_20
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 223
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d7a7c53d0a7ec70800000000000000
+      internalID: 9000339209973300617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 191
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3045fb1d7aeb460800000000000000
+      internalID: 7259424168667775928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 191
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebad4a59fd34e790800000000000000
+      internalID: -7501802938121212960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 223
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fd7f3cc9b5ec9e0800000000000000
+      internalID: -1599240088809119960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_24
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 191
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb47ce0f4b6eb340800000000000000
+      internalID: 4881457033410726848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 191
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533350c1529603260800000000000000
+      internalID: 7075270622703858485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_26
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 223
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c15e54ea9e1fd30800000000000000
+      internalID: 4463605640407096465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_27
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 191
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e68c37cc24890520800000000000000
+      internalID: 2668809582049789666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507710a786a265000800000000000000
+      internalID: 24253476208998149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_29
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 159
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afed29f6286ab890800000000000000
+      internalID: -7441520917677740125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 159
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8fb66b43f61f710800000000000000
+      internalID: 1725282404449122555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_31
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 159
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9dd573ee81027920800000000000000
+      internalID: 2986451216113196446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_32
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 159
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6358123ee3252ccd0800000000000000
+      internalID: -2539376809831463626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_33
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 191
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1566386f9b12b90800000000000000
+      internalID: -7268323855181655617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_34
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 159
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91971f43569c74830800000000000000
+      internalID: 4055431425987541273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ba5ef9aa3ae2e70800000000000000
+      internalID: 9092384650930006787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70eb6ff0415dc090800000000000000
+      internalID: -8012658822417227654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_37
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 159
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2dfc800ecc36470800000000000000
+      internalID: 8386772193686573805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_38
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 127
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a763373c4b925aab0800000000000000
+      internalID: -4997542355147737478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_39
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 127
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c34113f1aadb6980800000000000000
+      internalID: -8544495478902799422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_40
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 159
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14685650cc327880800000000000000
+      internalID: -8614756340426316773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_41
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 127
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8629cb1870f68c2b0800000000000000
+      internalID: -5564075261584174488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_42
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 159
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb092985bf241540800000000000000
+      internalID: 4977655944887995337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 95
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c08118e0c213fc0800000000000000
+      internalID: -3516981393192645524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_44
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 95
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6095c45fe2b3f8ca0800000000000000
+      internalID: -6012521904646366970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_45
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 95
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94354247e50dc4a30800000000000000
+      internalID: 4200961656523871049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_46
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 127
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cfd001222b96780800000000000000
+      internalID: -8689218146666677099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_47
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 95
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e47547d94279b10800000000000000
+      internalID: 1988098019187707417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_48
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1061be23fca930f0800000000000000
+      internalID: -1136687270473932771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_49
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 95
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d0736ff8d39d0e0800000000000000
+      internalID: -2244695250747060956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_50
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 127
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b967257c4ae4f360800000000000000
+      internalID: 7202639318176197042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_51
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 63
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b2949087ad03900800000000000000
+      internalID: 662269354310183698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_52
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e09ade6862e5bf0800000000000000
+      internalID: -333786961424085375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_53
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 63
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817e63f3f4326c7b0800000000000000
+      internalID: -5204433496110078184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_54
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 63
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e228b098addae10800000000000000
+      internalID: 2210663274247237205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_55
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afcb989a61e16480800000000000000
+      internalID: -8907590740018999386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_56
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 63
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69337eb3c88ba6650800000000000000
+      internalID: 6226992347233072022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_57
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 63
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8bda96ec2d11250800000000000000
+      internalID: 5913739569692260584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_58
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 95
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe11cd31de48318c0800000000000000
+      internalID: -4029731087791156753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_59
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 63
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21070b22e5b5e7600800000000000000
+      internalID: 467911871160152082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_60
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3059a672441ae9830800000000000000
+      internalID: 4079875626535392515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_61
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 63
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511695c4979476480800000000000000
+      internalID: -8906068952781070059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_62
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 31
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400e06f7e809d74e0800000000000000
+      internalID: -1982269319276339196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_63
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 31
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3538db0147864b650800000000000000
+      internalID: 6247733430776070995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_64
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd88d16dddc84360800000000000000
+      internalID: 7154194358791081431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_65
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 31
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7762c3ad4bc050d50800000000000000
+      internalID: 6702777591305873015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_66
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b731b045013d04c40800000000000000
+      internalID: 5494623612474954619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_67
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780bffc55f14102f0800000000000000
+      internalID: -1008452319471226745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_68
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 31
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72b1d8daabecb5b0800000000000000
+      internalID: -5351143138208402820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_69
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 31
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e147ab1d44a9e40800000000000000
+      internalID: 5663915148938845843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_70
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263cf1e45de1cba90800000000000000
+      internalID: -7296923394759474334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_71
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 31
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8459d8d0fef06e0e0800000000000000
+      internalID: -2241086245171260088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_72
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f4f5e00058de0a0800000000000000
+      internalID: -6850673222873034958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_73
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 31
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5b601b25f4140c0800000000000000
+      internalID: -4593302928365275673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_74
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4decbb6455ac1cce0800000000000000
+      internalID: -1386604742645657900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacd6e111aa275170800000000000000
+      internalID: 8167043320538127533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_76
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2446993907b70680800000000000000
+      internalID: -8788854897541495762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 79 1bit-portraits_77
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224ef6603a146b640800000000000000
+      internalID: 5095332196859765794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      79 1bit-portraits_0: 3740901641542151434
+      79 1bit-portraits_1: -3230270702205145213
+      79 1bit-portraits_10: -4881208575662569042
+      79 1bit-portraits_11: -6041350938074835856
+      79 1bit-portraits_12: 8059232742281224829
+      79 1bit-portraits_13: -6060526610341171621
+      79 1bit-portraits_14: -2357352461060983731
+      79 1bit-portraits_15: -8363462834244546525
+      79 1bit-portraits_16: 1845772198792655097
+      79 1bit-portraits_17: -4699828631753954698
+      79 1bit-portraits_18: -6114210866315050909
+      79 1bit-portraits_19: 7057453787295804777
+      79 1bit-portraits_2: -1699539980480075977
+      79 1bit-portraits_20: 9000339209973300617
+      79 1bit-portraits_21: 7259424168667775928
+      79 1bit-portraits_22: -7501802938121212960
+      79 1bit-portraits_23: -1599240088809119960
+      79 1bit-portraits_24: 4881457033410726848
+      79 1bit-portraits_25: 7075270622703858485
+      79 1bit-portraits_26: 4463605640407096465
+      79 1bit-portraits_27: 2668809582049789666
+      79 1bit-portraits_28: 24253476208998149
+      79 1bit-portraits_29: -7441520917677740125
+      79 1bit-portraits_3: 2380422734416631200
+      79 1bit-portraits_30: 1725282404449122555
+      79 1bit-portraits_31: 2986451216113196446
+      79 1bit-portraits_32: -2539376809831463626
+      79 1bit-portraits_33: -7268323855181655617
+      79 1bit-portraits_34: 4055431425987541273
+      79 1bit-portraits_35: 9092384650930006787
+      79 1bit-portraits_36: -8012658822417227654
+      79 1bit-portraits_37: 8386772193686573805
+      79 1bit-portraits_38: -4997542355147737478
+      79 1bit-portraits_39: -8544495478902799422
+      79 1bit-portraits_4: -7365241375595342145
+      79 1bit-portraits_40: -8614756340426316773
+      79 1bit-portraits_41: -5564075261584174488
+      79 1bit-portraits_42: 4977655944887995337
+      79 1bit-portraits_43: -3516981393192645524
+      79 1bit-portraits_44: -6012521904646366970
+      79 1bit-portraits_45: 4200961656523871049
+      79 1bit-portraits_46: -8689218146666677099
+      79 1bit-portraits_47: 1988098019187707417
+      79 1bit-portraits_48: -1136687270473932771
+      79 1bit-portraits_49: -2244695250747060956
+      79 1bit-portraits_5: 5118859659668666185
+      79 1bit-portraits_50: 7202639318176197042
+      79 1bit-portraits_51: 662269354310183698
+      79 1bit-portraits_52: -333786961424085375
+      79 1bit-portraits_53: -5204433496110078184
+      79 1bit-portraits_54: 2210663274247237205
+      79 1bit-portraits_55: -8907590740018999386
+      79 1bit-portraits_56: 6226992347233072022
+      79 1bit-portraits_57: 5913739569692260584
+      79 1bit-portraits_58: -4029731087791156753
+      79 1bit-portraits_59: 467911871160152082
+      79 1bit-portraits_6: 5324158668807704411
+      79 1bit-portraits_60: 4079875626535392515
+      79 1bit-portraits_61: -8906068952781070059
+      79 1bit-portraits_62: -1982269319276339196
+      79 1bit-portraits_63: 6247733430776070995
+      79 1bit-portraits_64: 7154194358791081431
+      79 1bit-portraits_65: 6702777591305873015
+      79 1bit-portraits_66: 5494623612474954619
+      79 1bit-portraits_67: -1008452319471226745
+      79 1bit-portraits_68: -5351143138208402820
+      79 1bit-portraits_69: 5663915148938845843
+      79 1bit-portraits_7: -8120812349724822912
+      79 1bit-portraits_70: -7296923394759474334
+      79 1bit-portraits_71: -2241086245171260088
+      79 1bit-portraits_72: -6850673222873034958
+      79 1bit-portraits_73: -4593302928365275673
+      79 1bit-portraits_74: -1386604742645657900
+      79 1bit-portraits_75: 8167043320538127533
+      79 1bit-portraits_76: -8788854897541495762
+      79 1bit-portraits_77: 5095332196859765794
+      79 1bit-portraits_8: -5353556959245828176
+      79 1bit-portraits_9: 5218813936426227755
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

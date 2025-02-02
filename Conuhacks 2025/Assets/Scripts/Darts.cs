@@ -43,14 +43,29 @@ public class Darts : MonoBehaviour
 
             Debug.Log("Crosshair paused at position: " + crosshair.transform.position);
 
+            SpawnDart("blue", crosshair.transform);
+
             isPlayerTurnComplete = true;
         }
 
         if (isMoving && !isVerticalMovementStarted) {
             float newPositionX = startPosition.position.x + Mathf.PingPong(Time.time * moveSpeed, moveDistance);
-            crosshair.transform.position = new Vector3(newPositionX, crosshair.transform.position.y, transform.position.z);
+            crosshair.transform.position = new Vector3(newPositionX, crosshair.transform.position.y, -1);
+        }
+
+        if (playerWin) {
+            GameController.Instance.AddMoney(dartMoneyWin);
+            if (enemyDelayCoroutine != null) {
+                StopCoroutine(enemyDelayCoroutine);
+            }
+            // TODO - boss fight
+        }
+        else if (enemyWin) {
+            
         }
     }
+
+    int dartMoneyWin = 10;
 
     private void AddScore(Collider2D[] colliders, Vector3 position) {
         bool isDoubleOutter = false;
@@ -66,18 +81,22 @@ public class Darts : MonoBehaviour
                 if (collider.name == "DoubleOuter") {
                     isDoubleOutter = true;
                 }
-                if (collider.name == "DoubleInner") {
+                else if (collider.name == "DoubleInner") {
                     isDoubleInner = true;
                 }
-                if (collider.name == "TripleOuter") {
+                else if (collider.name == "TripleOuter") {
                     isTripleOutter = true;
                 }
-                if (collider.name == "TripleInner") {
+                else if (collider.name == "TripleInner") {
                     isTripleInner = true;
                 }
                 else {
-                    value = int.Parse(collider.name);
+                    if (int.TryParse(collider.name, out value)) {
+                        Debug.Log("parse");
+                        value = int.Parse(collider.name);
+                    }
                 }
+                Debug.Log("A " + value);
                 Debug.Log("Collider found: " + collider.name);
             }
 
@@ -88,6 +107,7 @@ public class Darts : MonoBehaviour
                 value *= 3;
             }
 
+            Debug.Log("player is " + value);
             playerScore += value;
 
             UpdateUI();
@@ -117,6 +137,7 @@ public class Darts : MonoBehaviour
 
     public TextMeshProUGUI playerScoreText;
     public TextMeshProUGUI enemyScoreText;
+    public TextMeshProUGUI balanceText;
     int playerScore = 0;
     int enemyScore = 0;
 
@@ -136,9 +157,12 @@ public class Darts : MonoBehaviour
         public int value;
     }
     public TransformWithInt[] throwPositions = new TransformWithInt[20];
+    Coroutine enemyDelayCoroutine = null;
     void EnemyTurn() {
         if (!isEnemyTurning) {
             isEnemyTurning = true;
+
+            enemyDelayCoroutine = StartCoroutine(EnemyTurnDelay());
 
             int randomIndex = Random.Range(0, throwPositions.Length);
             TransformWithInt randomEntry = throwPositions[randomIndex];
@@ -152,6 +176,10 @@ public class Darts : MonoBehaviour
 
             SpawnDart("red", randomTransform);
         }
+    }
+
+    IEnumerator EnemyTurnDelay() {
+        yield return new WaitForSeconds(0.5f);
     }
 
     IEnumerator DartDespawn(GameObject dart) {
@@ -168,6 +196,8 @@ public class Darts : MonoBehaviour
     void SpawnDart(string color, Transform position) {
         GameObject dart;
 
+        position.position = new Vector3(position.position.x, position.position.y, -1);
+
         if (color == "blue") {
             dart = Instantiate(blueDart, position.position, Quaternion.identity);
         }
@@ -181,12 +211,30 @@ public class Darts : MonoBehaviour
     public void UpdateUI() {
         if (playerScoreText != null)
         {
-            playerScoreText.text = $"Player: ${playerScore}";
+            playerScoreText.text = $"Player: {playerScore}";
         }
 
         if (enemyScoreText != null)
         {
             enemyScoreText.text = $"Enemy: {enemyScore}";
+        }
+
+        if (balanceText != null) {
+            balanceText.text = $"Balance: ${GameController.Instance.playerBalance}";
+        }
+
+        CheckForWin();
+    }
+
+    int dartWinCondition = 150;
+    bool playerWin = false;
+    bool enemyWin = false;
+    void CheckForWin() {
+        if (playerScore >= dartWinCondition) {
+            playerWin = true;
+        }
+        else if (enemyScore >= dartWinCondition) {
+            enemyWin = true;
         }
     }
 }

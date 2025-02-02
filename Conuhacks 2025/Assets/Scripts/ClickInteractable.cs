@@ -1,8 +1,16 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ClickInteractable : MonoBehaviour
 {
+    SpriteRenderer spriteRenderer;
+    public Color hoverColor = Color.yellow;
+
+    void Start() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -31,6 +39,18 @@ public class ClickInteractable : MonoBehaviour
         }
         else if (tag == "Bar") {
             SceneManager.LoadScene(6);
+        }
+    }
+
+    void OnMouseOver() {
+        if (spriteRenderer != null) {
+            spriteRenderer.enabled = true;
+        }
+    }
+
+    void OnMouseExit() {
+        if (spriteRenderer != null) {
+            spriteRenderer.enabled = false;
         }
     }
 }

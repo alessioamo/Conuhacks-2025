@@ -6,7 +6,6 @@ public class BetButton : MonoBehaviour
     public int value;
     public Sprite regular;
     public Sprite pressed;
-    bool isPressed = false;
 
     BlackjackGame bj;
 

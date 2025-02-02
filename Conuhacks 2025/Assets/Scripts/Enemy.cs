@@ -42,9 +42,15 @@ public class Enemy : MonoBehaviour
     private void EnemyDeath() {
         Destroy(this.gameObject);
         GameController.Instance.AddMoney(5);
+
+        GameController.Instance.heart1.SetActive(false);
+        GameController.Instance.heart2.SetActive(false);
+        GameController.Instance.heart3.SetActive(false);
+
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(1);
         SceneManager.LoadScene(1);
+        GameController.Instance.balanceText.enabled = true;
     }
 
     float patrolDistance = 5;

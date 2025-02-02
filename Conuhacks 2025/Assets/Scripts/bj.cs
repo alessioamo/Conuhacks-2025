@@ -62,6 +62,7 @@ public class BlackjackGame : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P) && !gameInProgress) {
             SceneManager.LoadScene(1);
+            GameController.Instance.balanceText.enabled = true;
         }
     }
 

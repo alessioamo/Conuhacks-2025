@@ -96,13 +96,14 @@ public class Player : MonoBehaviour
     void PlayerDeath() {
         GameController.Instance.DeductMoney(GameController.Instance.playerBalance/2);
 
-        GameController.Instance.heart1.SetActive(true);
-        GameController.Instance.heart2.SetActive(true);
-        GameController.Instance.heart3.SetActive(true);
+        GameController.Instance.heart1.SetActive(false);
+        GameController.Instance.heart2.SetActive(false);
+        GameController.Instance.heart3.SetActive(false);
 
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(1);
         SceneManager.LoadScene(1);
+        GameController.Instance.balanceText.enabled = true;
     }
 
     public void Heal() {

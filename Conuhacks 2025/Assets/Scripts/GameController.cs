@@ -34,6 +34,8 @@ public class GameController : MonoBehaviour
             horseExit.SetActive(true);
             horseHover.SetActive(true);
         }
+
+        UpdateUI();
     }
 
     public bool DeductMoney(int amount)
@@ -42,6 +44,8 @@ public class GameController : MonoBehaviour
         {
             playerBalance -= amount;
             Debug.Log($"Money Deducted: ${amount}, New Balance: ${playerBalance}");
+
+            UpdateUI();
             return true;
         }
         else
@@ -94,6 +98,7 @@ public class GameController : MonoBehaviour
     public void StartMinigame() {
         HideGameInfo();
         if (currentGameIndex != 4) {
+            GameController.Instance.balanceText.enabled = false;
             SceneManager.LoadScene(currentGameIndex+2);
         }
     }
@@ -121,6 +126,7 @@ public class GameController : MonoBehaviour
                 break;
         }
         
+        GameController.Instance.balanceText.enabled = false;
         SceneManager.LoadScene(5);
     }
 
@@ -129,4 +135,11 @@ public class GameController : MonoBehaviour
     public GameObject heart3;
 
     public int currentPlayerHealth;
+
+    public TextMeshProUGUI balanceText;
+    public void UpdateUI() {
+        if (balanceText != null) {
+            balanceText.text = $"Balance: ${playerBalance}";
+        }
+    }
 }

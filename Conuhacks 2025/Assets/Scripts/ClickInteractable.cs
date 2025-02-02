@@ -48,6 +48,7 @@ public class ClickInteractable : MonoBehaviour
         else if (tag == "Horse") {
             AudioController.instance.StopMusic();
             AudioController.instance.ChangeMusic(0);
+            GameController.Instance.balanceText.enabled = false;
             SceneManager.LoadScene(7);
         }
     }

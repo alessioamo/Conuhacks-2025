@@ -135,12 +135,13 @@ public class FaceSpawner : MonoBehaviour
     IEnumerator ReturnToSaloon() {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(1);
+        GameController.Instance.balanceText.enabled = true;
     }
 
     void WinGame()
     {
         Debug.Log("You win the minigame!");
-        GameController.Instance.playerBalance += 10;
+        GameController.Instance.AddMoney(10);
         isGameOver = true;
         uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.green;
@@ -151,7 +152,7 @@ public class FaceSpawner : MonoBehaviour
 
     void LoseGame() {
         // TODO - show unique location
-        GameController.Instance.playerBalance -= 5;
+        GameController.Instance.DeductMoney(5);
         isGameOver = true;
         uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;

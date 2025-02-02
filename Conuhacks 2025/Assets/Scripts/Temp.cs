@@ -24,6 +24,7 @@ public class Temp : MonoBehaviour
     public void GoToSaloon() {
         AudioController.instance.StopMusic();
         AudioController.instance.ChangeMusic(1);
+        // GameController.Instance.balanceText.enabled = true;
         SceneManager.LoadScene(1);
     }
 }

@@ -213,7 +213,7 @@ MonoBehaviour:
   enemyHealth: 15
   speed: 1
   offsetDistance: 2
-  shootCooldown: 0.5
+  shootCooldown: 0.3
   bulletPrefab: {fileID: 6899894210652292720, guid: 6890d96c57d033440a877bfdab4d64ca, type: 3}
   firePoint: {fileID: 1733126417009720190}
   bulletSpeed: 5

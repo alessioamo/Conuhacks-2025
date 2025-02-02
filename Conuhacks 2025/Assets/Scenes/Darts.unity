@@ -3899,7 +3899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ca44eb13dafff479b1142d87b1b85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 5
   moveDistance: 8.5
   startPosition: {fileID: 1512285345}
   crosshair: {fileID: 78203857}

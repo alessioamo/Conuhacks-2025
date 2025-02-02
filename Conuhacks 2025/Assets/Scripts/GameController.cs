@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
         playerBalance += amount;
         Debug.Log($"Money Added: ${amount}, New Balance: ${playerBalance}");
 
-        if (playerBalance >= 100) {
+        if (playerBalance >= 50) {
             horseExit.SetActive(true);
             horseHover.SetActive(true);
         }
@@ -128,7 +128,10 @@ public class GameController : MonoBehaviour
         
         GameController.Instance.balanceText.enabled = false;
         SceneManager.LoadScene(5);
+        Instantiate(enemyToFight, new Vector3(0, 3.1567f, 0.0104f), Quaternion.identity);
     }
+
+    public Transform enemySpawn;
 
     public GameObject heart1;
     public GameObject heart2;

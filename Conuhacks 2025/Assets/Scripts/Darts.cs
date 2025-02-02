@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Darts : MonoBehaviour
 {
@@ -62,7 +63,8 @@ public class Darts : MonoBehaviour
             GameController.Instance.LoadBossFight(2);
         }
         else if (enemyWin) {
-            
+            SceneManager.LoadScene(1);
+            GameController.Instance.balanceText.enabled = true;
         }
     }
 
@@ -231,6 +233,7 @@ public class Darts : MonoBehaviour
     bool playerWin = false;
     bool enemyWin = false;
     void CheckForWin() {
+        Debug.Log("s " + playerScore + " " + enemyScore);
         if (playerScore >= dartWinCondition) {
             playerWin = true;
         }

@@ -1,82 +1,158 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FaceSpawner : MonoBehaviour
 {
-    public GameObject[] facePrefabs;  // Array of face prefabs to choose from
-    public int numFaces = 30;         // Number of faces to spawn
-    public float spacing = 2f;        // Distance between faces
-    public Vector2 areaSize = new Vector2(10f, 10f);  // Area size for spawning
-    public GameObject uniqueFacePrefab;  // The unique face prefab (set this in the Inspector)
+    public GameObject[] facePrefabs;
+    public int numFaces = 40;
+    public float spacing = 2f;
+    public Vector2 areaSize = new Vector2(10f, 10f);
 
-    private GameObject uniqueFaceInstance;  // Instance of the unique face
+    private GameObject uniqueFaceInstance;
+    private List<GameObject> availableFaces;
+
+    public Transform spawnParent;
+    public Transform initialFaceSpawn;
+
+    public GameObject initialWantedPoster;
+
+    public Slider timerSlider1;
+    public Slider timerSlider2;
+
+    private float timer = 10f;
+    private bool timerRunning = false;
 
     void Start()
     {
-        SpawnFaces();
+        availableFaces = new List<GameObject>(facePrefabs);
+        StartCoroutine(SpawnFaces());
     }
 
-    void SpawnFaces()
+    IEnumerator SpawnFaces()
     {
-        // Calculate the center of the area
-        float centerX = 0f;
-        float centerY = 0f;
+        float centerX = initialFaceSpawn.position.x;
+        float centerY = initialFaceSpawn.position.y;
 
-        // Determine the number of rows and columns based on numFaces
-        int rows = Mathf.CeilToInt(Mathf.Sqrt(numFaces)); // Number of rows (rounded up)
-        int cols = Mathf.CeilToInt((float)numFaces / rows); // Number of columns
+        int rows = 5;
+        int cols = 8;
 
-        // Calculate the starting position for the first face (top-left corner)
         float startX = centerX - (cols * spacing) / 2f;
         float startY = centerY + (rows * spacing) / 2f;
 
-        // Randomly select an index for the unique face (this face will only appear once)
-        int uniqueFaceIndex = Random.Range(0, numFaces);
-
-        // Loop through the faces and place them evenly spaced
-        for (int i = 0; i < numFaces; i++)
+        List<Vector2> gridPositions = new List<Vector2>();
+        for (int row = 0; row < rows; row++)
         {
-            int row = i / cols;  // Row index
-            int col = i % cols;  // Column index
-
-            // Calculate the position of each face
-            float xPos = startX + col * spacing;
-            float yPos = startY - row * spacing;
-
-            if (i == uniqueFaceIndex)  // Check if this is the position for the unique face
+            for (int col = 0; col < cols; col++)
             {
-                // Instantiate the unique face prefab at this position
-                uniqueFaceInstance = Instantiate(uniqueFacePrefab, new Vector3(xPos, yPos, 0f), Quaternion.identity);
-                uniqueFaceInstance.GetComponent<Collider2D>().isTrigger = true;  // Make sure it's interactable
-            }
-            else
-            {
-                // Instantiate a random face prefab for all other positions
-                int randomIndex = Random.Range(0, facePrefabs.Length);
-                GameObject chosenFace = facePrefabs[randomIndex];
-                Instantiate(chosenFace, new Vector3(xPos, yPos, 0f), Quaternion.identity);
+                gridPositions.Add(new Vector2(startX + col * spacing, startY - row * spacing));
             }
         }
+
+        int randomIndex = Random.Range(0, gridPositions.Count);
+        Vector2 uniqueFacePosition = gridPositions[randomIndex];
+
+        int uniqueFaceIndex = Random.Range(0, availableFaces.Count);
+        GameObject uniqueFacePrefab = availableFaces[uniqueFaceIndex];
+        availableFaces.RemoveAt(uniqueFaceIndex);
+
+        StartCoroutine(ShowWantedPerson(uniqueFacePrefab));
+
+        yield return new WaitForSeconds(5);
+
+        uniqueFaceInstance = Instantiate(uniqueFacePrefab, uniqueFacePosition, Quaternion.identity);
+        uniqueFaceInstance.gameObject.transform.SetParent(spawnParent);
+        uniqueFaceInstance.GetComponent<Collider2D>().isTrigger = true;
+
+        gridPositions.RemoveAt(randomIndex);
+
+        for (int i = 0; i < numFaces - 1; i++)
+        {
+            int randomGridIndex = Random.Range(0, gridPositions.Count);
+            Vector2 spawnPosition = gridPositions[randomGridIndex];
+
+            GameObject chosenFace = availableFaces[Random.Range(0, availableFaces.Count)];
+            GameObject tempFaceHolder = Instantiate(chosenFace, spawnPosition, Quaternion.identity);
+            tempFaceHolder.gameObject.transform.SetParent(spawnParent);
+
+            gridPositions.RemoveAt(randomGridIndex);
+        }
+
+        timerRunning = true;
     }
 
+    IEnumerator ShowWantedPerson(GameObject prefab)
+    {
+        SpriteRenderer wantedPosterRenderer = initialWantedPoster.transform.GetChild(0).GetComponent<SpriteRenderer>();
+        wantedPosterRenderer.sprite = prefab.GetComponent<SpriteRenderer>().sprite;
+        initialWantedPoster.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(5);
+        
+        initialWantedPoster.gameObject.SetActive(false);
+    }
+
+    bool isGameOver = false;
     void Update()
     {
-        // Check if the player clicks on the unique face
-        if (Input.GetMouseButtonDown(0)) // Left mouse button click
+        if (timerRunning)
+        {
+            timer -= Time.deltaTime;
+
+            if (!isGameOver) {
+                if (timer <= 0f)
+                {
+                    Debug.Log("Time's up! The timer has run out.");
+                    timer = 0f; 
+                    timerRunning = false;
+
+                    // TODO - End and return to saloon
+                    LoseGame();
+                }
+
+                timerSlider1.value = timer / 10f;
+                timerSlider2.value = timer / 10f;
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Collider2D hit = Physics2D.OverlapPoint(mousePosition);
 
             if (hit != null && hit.gameObject == uniqueFaceInstance)
             {
-                // Player clicked on the unique face
                 WinGame();
             }
+            else if (hit != null && hit.gameObject != uniqueFaceInstance) {
+                LoseGame();
+            }
         }
+    }
+
+    IEnumerator ReturnToSaloon() {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(1);
     }
 
     void WinGame()
     {
         Debug.Log("You win the minigame!");
-        // Add any additional winning logic here (e.g., display message, play animation, etc.)
+        GameController.Instance.playerBalance += 10;
+        isGameOver = true;
+        uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+        uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.green;
+        StartCoroutine(ReturnToSaloon());
+    }
+
+    void LoseGame() {
+        // TODO - show unique location
+        GameController.Instance.playerBalance -= 5;
+        isGameOver = true;
+        uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+        uniqueFaceInstance.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
+        StartCoroutine(ReturnToSaloon());
     }
 }

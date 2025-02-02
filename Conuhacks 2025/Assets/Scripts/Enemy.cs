@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -39,7 +40,10 @@ public class Enemy : MonoBehaviour
     }
 
     private void EnemyDeath() {
-
+        GameController.Instance.AddMoney(5);
+        AudioController.instance.StopMusic();
+        AudioController.instance.ChangeMusic(1);
+        SceneManager.LoadScene(1);
     }
 
     float patrolDistance = 5;

@@ -1,11 +1,15 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     void Start()
     {
         playerHealth = maxHealth;
+
+        AudioController.instance.StopMusic();
+        AudioController.instance.ChangeMusic(2);
     }
 
     // Update is called once per frame
@@ -60,7 +64,10 @@ public class Player : MonoBehaviour
     }
 
     void PlayerDeath() {
-
+        GameController.Instance.DeductMoney(GameController.Instance.playerBalance/2);
+        AudioController.instance.StopMusic();
+        AudioController.instance.ChangeMusic(1);
+        SceneManager.LoadScene(1);
     }
 
     public void Heal() {

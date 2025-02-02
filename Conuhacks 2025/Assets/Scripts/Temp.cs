@@ -16,6 +16,14 @@ public class Temp : MonoBehaviour
     }
 
     public void StartGame() {
+        // TODO  play horse animation
+
+        GoToSaloon();
+    }
+
+    public void GoToSaloon() {
+        AudioController.instance.StopMusic();
+        AudioController.instance.ChangeMusic(1);
         SceneManager.LoadScene(1);
     }
 }
